@@ -53,13 +53,13 @@ jobs:
           github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
           publish_dir: ./build
   
-  setup-test: 
-    name: RobotFramework Test
+  setup-test:
+    name: Tedt
     needs: deploy
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout Robotframework Project
+      - name: RobotFramework Test
         uses: roccoemanuelebonanno/robot-github-actions@master
         with:
           ref: refs/heads/release
