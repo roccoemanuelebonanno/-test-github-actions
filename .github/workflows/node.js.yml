@@ -54,9 +54,10 @@ jobs:
           publish_dir: ./build
   
   setup-test: 
+    name: RobotFramework Test
+    needs: deploy
     runs-on: ubuntu-latest
-    needs: build
-
+    
     steps:
       - name: Checkout Robotframework Project
         uses: roccoemanuelebonanno/robot-github-actions@master
