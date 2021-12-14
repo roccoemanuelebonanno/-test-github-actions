@@ -59,7 +59,7 @@ jobs:
 
     steps:
       - name: RobotFramework Test
-        uses: roccoemanuelebonanno/robot-github-actions@master
+        uses: roccoemanuelebonanno/robot-github-actions@main
         with:
           ref: refs/heads/release
 
