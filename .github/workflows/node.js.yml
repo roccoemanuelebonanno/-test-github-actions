@@ -59,7 +59,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: RobotFramework Test
+        name: RobotFramework Test
         uses: roccoemanuelebonanno/robot-github-actions@master
         with:
           ref: refs/heads/release
