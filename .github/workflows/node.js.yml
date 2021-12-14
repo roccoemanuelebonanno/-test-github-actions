@@ -53,8 +53,8 @@ jobs:
           github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
           publish_dir: ./build
 
-  setup-test:
-    name: Tedt
+  test:
+    name: Test
     needs: deploy
     runs-on: ubuntu-latest
 
