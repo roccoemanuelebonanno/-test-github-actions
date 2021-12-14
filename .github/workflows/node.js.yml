@@ -58,10 +58,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: RobotFramework Test
-        uses: roccoemanuelebonanno/robot-github-actions@main
+      - name: Checkout RobotFramework Project
+        uses: actions/checkout@v2
         with:
-          ref: refs/heads/release
+          repository: roccoemanuelebonanno/robot-github-actions
+          path: robotframework-test
 
       - name: Set up Python 3.9
         uses: actions/setup-python@v2
