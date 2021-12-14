@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React Ciao
+          Learn React Ciao 2
         </a>
       </header>
     </div>
